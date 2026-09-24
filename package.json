@@ -1,0 +1,45 @@
+{
+    "name": "t-pagecode-phishing-check",
+    "version": "1.0.0",
+    "description": "T-PageCode Phishing Check，钓鱼网站检测工具（本地库）",
+    "main": "app/main.js",
+    "type": "commonjs",
+    "license": "GPL-3.0-only",
+    "scripts": {
+        "test": "electron .",
+        "build": "electron-builder --win nsis zip"
+    },
+    "devDependencies": {
+        "electron": "^44.4.5",
+        "electron-builder": "^26.16.1"
+    },
+    "build": {
+        "appId": "io.github.t-pagecode.phishingcheck",
+        "icon": "icon/icon.ico",
+        "productName": "T-PageCode Phishing Check",
+        "artifactName": "${productName}-${version}.${ext}",
+        "nsis": {
+            "oneclick": false,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true,
+            "shortcutName": "T-PageCode Phishing Check",
+            "installerIcon": "icon/icon.ico",
+            "uninstallerIcon": "icon/icon.ico",
+            "deleteAppDataOnUninstall": false
+        },
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": ["x64"]
+                },
+                {
+                    "target": "zip",
+                    "arch": ["x64"]
+                }
+            ],
+            "icon": "icon/icon.ico"
+        }
+    }
+}
