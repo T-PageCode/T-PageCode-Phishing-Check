@@ -38,8 +38,7 @@
                     "target": "zip",
                     "arch": ["x64"]
                 }
-            ],
-            "icon": "icon/icon.ico"
+            ]
         }
     }
 }
