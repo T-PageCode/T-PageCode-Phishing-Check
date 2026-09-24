@@ -13,6 +13,7 @@ body,html{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    transition: background-color 0.5s ease;
 }
 #title-bar{
     position: absolute;
@@ -24,6 +25,7 @@ body,html{
     -webkit-app-region: drag;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    transition: background-color 0.5s ease;
 }
 #title{
     font-size: 25px;
@@ -76,6 +78,7 @@ body,html{
     top: 100px;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: color 0.5s ease;
 }
 #phishing-check{
     position: absolute;
@@ -83,6 +86,7 @@ body,html{
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 20px;
+    transition: color 0.5s ease;
 }
 #input-site{
     position: absolute;
@@ -96,6 +100,7 @@ body,html{
     border: 1px solid rgb(200,0,255);
     transition: border-color 0.5s ease;
     color: rgb(100,0,255);
+    background-color: transparent;
     text-transform: lowercase;
 }
 #input-site:focus{
@@ -128,9 +133,12 @@ body,html{
     justify-content: center;
     align-items: center;
     background-color: rgb(255,255,255);
-    border: 1px solid rgb(150,0,255);
-    color: rgb(150,0,255);
+    border: 1px solid black;
+    color: black;
     border-radius: 10px;
+    transition: border-color 0.5s ease,
+    color 0.5s ease,
+    background-color 0.5s ease;
 }
 #title-image{
     position: absolute;
@@ -138,4 +146,33 @@ body,html{
     left: 5px;
     height: 50px;
     width: 55px;
+}
+@media (prefers-color-scheme: dark) {
+    #app{
+        background-color: rgb(30,30,30);
+    }
+    #title-bar{
+        background-color: rgb(30,30,30);
+    }
+    #warning{
+        background-color: rgb(30,30,30);
+        color: white;
+        border-color: rgb(255,255,255)
+    }
+    #title{
+        color: white;
+    }
+    #main-text{
+        color: white;
+    }
+    #phishing-check{
+        color: white;
+    }
+    #input-site:focus{
+        border-color: rgb(255,0,255);
+        color: rgb(255,0,255);
+    }
+    #input-site::selection{
+        color: rgb(100,100,255);
+    }
 }
