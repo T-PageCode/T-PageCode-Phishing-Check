@@ -43,7 +43,8 @@ body,html{
     background-color: transparent;
     border-radius: 12.5px;
     border: none;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease,
+    color 0.5s ease;
     -webkit-app-region: no-drag;
 }
 #close-button:hover{
@@ -63,7 +64,8 @@ body,html{
     background-color: transparent;
     border-radius: 12.5px;
     border: none;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease,
+    color 0.5s ease;
     -webkit-app-region: no-drag;
 }
 #min-button:hover{
@@ -174,5 +176,17 @@ body,html{
     }
     #input-site::selection{
         color: rgb(100,100,255);
+    }
+    #close-button{
+        color: white;
+    }
+    #min-button{
+        color: white;
+    }
+    #close-button:hover{
+        background-color: rgb(70,70,70);
+    }
+    #min-button:hover{
+        background-color: rgb(70,70,70);
     }
 }
