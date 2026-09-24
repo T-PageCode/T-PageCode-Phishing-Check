@@ -15,7 +15,6 @@
     },
     "build": {
         "appId": "io.github.t-pagecode.phishingcheck",
-        "icon": "icon/icon.ico",
         "productName": "T-PageCode Phishing Check",
         "artifactName": "${productName}-${version}.${ext}",
         "nsis": {
@@ -38,7 +37,8 @@
                     "target": "zip",
                     "arch": ["x64"]
                 }
-            ]
+            ],
+            "icon": "icon/icon.ico"
         }
     }
 }
