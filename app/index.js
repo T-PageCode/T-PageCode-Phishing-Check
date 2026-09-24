@@ -98,7 +98,7 @@ inputSite.addEventListener("keydown",(keys) => {
             phishingInfo.innerText = "此网址是钓鱼网站！";
         }
         else if (!inputSite.value.trim()) {
-            phishingInfo.style.color = "white";
+            phishingInfo.style.color = "rgb(150,150,150)";
             phishingInfo.innerText = "您未输入文本，请输入文本";
         }
         else {
