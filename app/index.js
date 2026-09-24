@@ -83,7 +83,7 @@ qudong-df.com.cn
 maicongmousedr.com.cn
 ac-razer.com.cn
 mg-dareu.com.cn
-`.split("\n");
+`.split("\n").filter(Boolean);
 let siteValue = null;
 const inputSite = document.getElementById("input-site");
 const phishingInfo = document.getElementById("phishing-info");
@@ -96,6 +96,10 @@ inputSite.addEventListener("keydown",(keys) => {
         if (setPhishing.has(siteValue)) {
             phishingInfo.style.color = "red";
             phishingInfo.innerText = "此网址是钓鱼网站！";
+        }
+        else if (!inputSite.value.trim()) {
+            phishingInfo.style.color = "white";
+            phishingInfo.innerText = "您未输入文本，请输入文本";
         }
         else {
             phishingInfo.style.color = "green";
