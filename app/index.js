@@ -107,6 +107,3 @@ inputSite.addEventListener("keydown",(keys) => {
         }
     }
 })
-inputSite.addEventListener("blur",() => {
-    inputSite.style.color = "rgb(255,0,255)";
-})

@@ -177,6 +177,9 @@ body,html{
     #input-site::selection{
         color: rgb(100,100,255);
     }
+    #input-site:not(:focus) {
+        color: rgb(255,0,255);
+    }
     #close-button{
         color: white;
     }
