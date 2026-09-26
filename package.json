@@ -1,6 +1,6 @@
 {
     "name": "t-pagecode-phishing-check",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "T-PageCode Phishing Check，钓鱼网站检测工具（本地库）",
     "main": "app/main.js",
     "type": "commonjs",
