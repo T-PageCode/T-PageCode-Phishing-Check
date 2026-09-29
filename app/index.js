@@ -83,6 +83,13 @@ qudong-df.com.cn
 maicongmousedr.com.cn
 ac-razer.com.cn
 mg-dareu.com.cn
+win-intel.com.cn
+cpu-amd.com.cn
+rx-amd.com.cn
+app-intel.com.cn
+win-amddrivers.com.cn
+jv-amd.com.cn
+win-amddrivers.com.cn
 `.split("\n").filter(Boolean);
 let siteValue = null;
 const inputSite = document.getElementById("input-site");
