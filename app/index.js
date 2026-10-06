@@ -48,6 +48,8 @@ deepseeks-hk.com.cn
 deepseekdl.com
 deepseek-se.com.cn
 deeposeek.com.cn
+deepseek-sy.com.cn
+deepseek-aiii.com.cn
 kf-kaspersky.com.cn
 web-kaspersky.com.cn
 ks-kaspersky.com.cn
