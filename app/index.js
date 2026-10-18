@@ -25,6 +25,7 @@ zbrowser-an.com.cn
 zbrowser-zr.com.cn
 wpsoffisce.com.cn
 wpstool.com.cn
+wpsflow.com.cn
 leigodco.com
 leigodjsq.com
 leigodnn.com
@@ -57,7 +58,9 @@ kaspersky-cyber.com.cn
 kasperskyhub.com.cn
 kc-kaspersky.com.cn
 baobean.hl.cn
+baobean.com.cn
 doubao-m.com.cn
+doubao-icu.com.cn
 browser-sogou.com.cn
 soogoubrowser.com.cn
 sogousrfa.cn
